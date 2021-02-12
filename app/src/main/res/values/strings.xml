@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Musical StructureApp</string>
+    <string name="search_play_list">Search playlist</string>
+    <string name="Play_list">Playlist</string>
+    <string name="play">play</string>
+    <string name="bohemian_rhapsody_the_original_soundtrack">Bohemian Rhapsody (The Original Soundtrack)</string>
+    <string name="enjoy_the_best_music_anywhere">Enjoy the best music anywhere!</string>
+    <string name="the_soundtrack_album">The soundtrack album to the 2018 biographical film.</string>
+    <string name="queen_album_2018">Queen Album 2018</string>
+
+    <!-- Artists -->
+    <string name="queen">Queen</string>
+    <string name="smile">Smile</string>
+
+    <!-- Songs -->
+    <string name="_20th_century_fox_fanfare">20th Century Fox Fanfare</string>
+    <string name="somebody_to_love">Somebody To Love</string>
+    <string name="doing_all_right">Doing All Right</string>
+    <string name="keep_yourself_alive">Keep Yourself Alive</string>
+    <string name="killer_queen">Killer Queen</string>
+    <string name="fat_bottomed_girls">Fat Bottomed Girls</string>
+    <string name="bohemian_rhapsody">Bohemian Rhapsody</string>
+    <string name="now_im_here">Now I\'m Here</string>
+    <string name="crazy_little_thing_called_love">Crazy Little Thing Called Love</string>
+    <string name="love_of_my_life">Love Of My Life</string>
+    <string name="we_will_rock_you">We Will Rock You (Movie Mix)</string>
+    <string name="another_one_bites_the_dust">Another One Bites The Dust</string>
+    <string name="i_want_to_break_free">I Want To Break Free</string>
+    <string name="under_pressure">Under Pressure [feat. David Bowie]</string>
+    <string name="who_wants_to_live_forever">Who Wants To Live Forever</string>
+    <string name="radio_ga_ga">Radio Ga Ga (Live Aid)</string>
+    <string name="ay_Oh">Ay-Oh (Live Aid)</string>
+    <string name="hammer_to_fall">Hammer To Fall (Live Aid)</string>
+    <string name="we_are_the_champions">We Are The Champions (Live Aid)</string>
+    <string name="dont_stop_me_now">Don\'t Stop Me Now</string>
+    <string name="the_show_must_go_on">The Show Must Go On</string>
+
+    <!-- Times -->
+    <string name="_0_25">0:25</string>
+    <string name="_4_55">4:55</string>
+    <string name="_3_16">3:16</string>
+    <string name="_3_56">3:56</string>
+    <string name="_2_59">2:59</string>
+    <string name="_4_37">4:37</string>
+    <string name="_5_54">5:54</string>
+    <string name="_4_26">4:26</string>
+    <string name="_2_43">2:43</string>
+    <string name="_4_28">4:28</string>
+    <string name="_2_09">2:09</string>
+    <string name="_3_34">3:34</string>
+    <string name="_3_43">3:43</string>
+    <string name="_4_04">4:04</string>
+    <string name="_5_14">5:14</string>
+    <string name="_4_05">4:05</string>
+    <string name="_0_41">0:41</string>
+    <string name="_4_03">4:03</string>
+    <string name="_3_57">3:57</string>
+    <string name="_3_37">3:37</string>
+    <string name="_4_31">4:31</string>
+
+
+
+
+
+</resources>

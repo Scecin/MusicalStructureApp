@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/activity_vertical_margin_min"
+    android:background="#263238">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="36dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/bohemian_rhapsody"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="6"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/activity_horizontal_margin_min">
+
+        <TextView
+            android:id="@+id/song_name_view"
+            style="@style/textViews"
+            android:text="@string/_20th_century_fox_fanfare"/>
+
+        <TextView
+            android:id="@+id/artist_name_view"
+            style="@style/textViews"
+            android:text="@string/queen"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time_view"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp"
+        android:text="@string/_0_25"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+</LinearLayout>

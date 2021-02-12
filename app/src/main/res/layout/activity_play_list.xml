@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayList"
+    android:background="#263238">
+
+    <ImageView
+        style="@style/imageViews"
+        android:layout_marginTop="@dimen/activity_vertical_margin_min"
+        android:src="@drawable/bohemian_rhapsody" />
+
+    <TextView
+        style="@style/textViews"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin_min"
+        android:text="@string/queen" />
+
+    <TextView
+        style="@style/textViews"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin_min"
+        android:text="@string/_20th_century_fox_fanfare" />
+
+    <ImageView
+        style="@style/imageViews"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_max"
+        android:layout_marginBottom="@dimen/activity_vertical_margin_max"
+        android:src="@drawable/audio_button" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_min"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin_min"
+            android:max="100"
+            android:progress="50"
+            android:theme="@style/RatingBar"/>
+
+        <TextView
+            style="@style/textViews"
+            android:text="0:10/0:20"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/progress"
+            android:layout_marginStart="@dimen/activity_horizontal_margin_min"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin_min"/>
+    </RelativeLayout>
+</LinearLayout>
