@@ -27,7 +27,6 @@
         android:background="@drawable/rounded_edges"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-
-        android:layout_marginBottom="@dimen/activity_vertical_margin_min"/>
+        android:layout_marginBottom="@dimen/activity_vertical_margin_min" />
 
 </RelativeLayout>
