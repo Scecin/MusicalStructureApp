@@ -7,18 +7,37 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 public class SongsActivity extends AppCompatActivity {
+
+    ArrayList<Song> songs = new ArrayList<Song>();
+    SongsAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.songs_list);
 
-        ArrayList<Song> songs = new ArrayList<Song>();
+        adapter = new SongsAdapter(songs);
+        RecyclerView recyclerView = findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(adapter);
+        setPlaces();
 
+       //Find the view that shows the playList category
+        Button playButton = (Button) findViewById(R.id.play_button_2);
+        playButton.setOnClickListener(v -> {
+            Intent playIntent = new Intent(SongsActivity.this, PlayList.class);
+            startActivity(playIntent);
+        });
+    }
+
+    private void setPlaces() {
         songs.add(new Song(getString(R.string._20th_century_fox_fanfare), getString(R.string.queen),getString(R.string._0_25), R.drawable.bohemian_rhapsody));
         songs.add(new Song(getString(R.string.somebody_to_love), getString(R.string.queen), getString(R.string._4_55), R.drawable.bohemian_rhapsody));
         songs.add(new Song(getString(R.string.doing_all_right), getString(R.string.smile), getString(R.string._3_16), R.drawable.bohemian_rhapsody));
@@ -40,17 +59,5 @@ public class SongsActivity extends AppCompatActivity {
         songs.add(new Song(getString(R.string.we_are_the_champions), getString(R.string.queen), getString(R.string._3_57), R.drawable.bohemian_rhapsody));
         songs.add(new Song(getString(R.string.dont_stop_me_now), getString(R.string.queen), getString(R.string._3_37), R.drawable.bohemian_rhapsody));
         songs.add(new Song(getString(R.string.the_show_must_go_on), getString(R.string.queen), getString(R.string._4_31), R.drawable.bohemian_rhapsody));
-
-        SongsAdapter adapter = new SongsAdapter(this, songs);
-
-        ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(adapter);
-
-        //Find the view that shows the playList category
-        Button playButton = (Button) findViewById(R.id.play_button_2);
-        playButton.setOnClickListener(v -> {
-            Intent playIntent = new Intent(SongsActivity.this, PlayList.class);
-            startActivity(playIntent);
-        });
     }
 }
